@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-game-bg: #05070a;
+  --color-game-surface: #0f172a;
+  --color-game-accent: #38bdf8;
+  --color-game-text-p: #f8fafc;
+  --color-game-text-s: #94a3b8;
+  
+  --color-block-1: #ef4444;
+  --color-block-2: #f59e0b;
+  --color-block-3: #10b981;
+  --color-block-4: #3b82f6;
+  --color-block-5: #8b5cf6;
+  --color-block-6: #ec4899;
+  --color-block-7: #06b6d4;
+  --color-block-8: #f97316;
+  --color-block-9: #84cc16;
+
+  --shadow-glow: 0 0 15px rgba(56, 189, 248, 0.3);
+  --shadow-block: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  body {
+    @apply bg-game-bg text-game-text-p antialiased;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+.radial-target {
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+}
+
+.glass-panel {
+  background: var(--color-game-surface);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

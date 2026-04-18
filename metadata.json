@@ -1,0 +1,6 @@
+{
+  "name": "Numerix: Sum Puzzle",
+  "description": "A high-addiction number-summing puzzle game. Match blocks to reach the target sum and prevent them from reaching the top.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
